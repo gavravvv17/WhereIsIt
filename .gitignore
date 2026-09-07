@@ -1,0 +1,112 @@
+# =============================================================
+# WhereIsIt – Root .gitignore
+# =============================================================
+
+# ──────────────────────────────────────────────
+# Environment / Secrets  ← NEVER commit these
+# ──────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ──────────────────────────────────────────────
+# Java / Maven (Backend)
+# ──────────────────────────────────────────────
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+*.class
+*.jar
+!**/test*/*.jar
+*.war
+*.ear
+*.nar
+
+# Spring Boot application-local overrides
+application-local.properties
+application-local.yml
+application-local.yaml
+
+# Maven
+.mvn/timing.properties
+
+# ──────────────────────────────────────────────
+# Node / Frontend
+# ──────────────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+build/
+
+# Yarn / NPM / PNPM debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Vite local files
+*.local
+
+# ──────────────────────────────────────────────
+# Application Generated Directories
+# ──────────────────────────────────────────────
+uploads/
+
+# ──────────────────────────────────────────────
+# Log Files
+# ──────────────────────────────────────────────
+*.log
+logs/
+spring.log
+
+# ──────────────────────────────────────────────
+# IDEs & Editors
+# ──────────────────────────────────────────────
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# Eclipse / STS
+.settings/
+.project
+.classpath
+.apt_generated/
+.apt_generated_test/
+
+# NetBeans
+nbactions.xml
+
+# ──────────────────────────────────────────────
+# OS Generated Files
+# ──────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────
+# Miscellaneous
+# ──────────────────────────────────────────────
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.bak
+*.tmp
+*.orig

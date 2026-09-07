@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* ============ Tailwind v4 custom theme ============ */
+@theme {
+  --color-theme-bg: #F6FBF7;
+  --color-theme-surface: #FFFFFF;
+  --color-primary-green: #4CAF72;
+  --color-light-green: #DDF3E4;
+  --color-soft-mint: #EEF9F1;
+  --color-dark-green: #2F7D4A;
+  --color-accent-green: #86D39B;
+  --color-primary-text: #1F2933;
+  --color-secondary-text: #6B7280;
+  --color-theme-border: #E3EEE6;
+  --color-success: #4CAF72;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  --radius-card: 18px;
+  --radius-btn: 12px;
+  --radius-input: 11px;
+
+  --shadow-soft: 0 4px 20px -2px rgba(47, 125, 74, 0.05), 0 2px 8px -1px rgba(0, 0, 0, 0.02);
+  --shadow-hover: 0 10px 25px -4px rgba(47, 125, 74, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+
+  --font-family-sans: 'Outfit', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* ============ Base styles ============ */
+body {
+  margin: 0;
+  font-family: var(--font-family-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-theme-bg);
+  color: var(--color-primary-text);
+}
+
+/* ============ Custom scrollbars ============ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-theme-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-light-green);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-green);
+}
+
+/* ============ Utility classes ============ */
+.nav-shadow {
+  box-shadow: 0 4px 14px 0 rgba(76, 175, 114, 0.15);
+}
+
+.transition-theme {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============ Shorthand CSS vars for all components ============ */
+:root {
+  --themeBg: #F6FBF7;
+  --themeSurface: #FFFFFF;
+  --primaryGreen: #4CAF72;
+  --lightGreen: #DDF3E4;
+  --softMint: #EEF9F1;
+  --darkGreen: #2F7D4A;
+  --accentGreen: #86D39B;
+  --primaryText: #1F2933;
+  --secondaryText: #6B7280;
+  --themeBorder: #E3EEE6;
+}
